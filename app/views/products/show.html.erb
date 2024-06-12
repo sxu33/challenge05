@@ -1,13 +1,4 @@
-<h1>Products</h1>
+<h1><%= @product.title %></h1>
 
-<ul>
-  <% @products.each do |product| %>
-    <li>
-      <a href="/products/<%= product.id %>">
-        <%= product.title %>
-      </a>
-      <p><%= product.price %></p>
-      <p><%= product.stock_quantity %></p>
-    </li>
-  <% end %>
-</ul>
+<p><%= @product.price %></p>
+<p><%= @product.stock_quantity %></p>
